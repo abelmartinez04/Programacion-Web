@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -79,14 +80,49 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+
+        .breadcrumb {
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #4CAF50;
+            display: inline-flex;
+            align-items: center;
+        }
+        .breadcrumb a i {
+            margin-right: 4px;
+        }
+        .breadcrumb span {
+            margin: 0 5px;
+            color: #999;
+        }
         </style>
     </head>
     <body>
+            <i class="bi bi-house-door-fill"></i>
+        </a>
         <div id="tarea1">
-            <div>
+            <div class="breadcrumb">
+            <a href="index.php"><i class="bi bi-house-door-fill"></i>Inicio</a>
+            <span>></span>
+            <span>
+            <?php
+            $archivo = basename($_SERVER['PHP_SELF'], ".php"); // obtiene el nombre del archivo sin ".php"
+
+            // Opcional: reemplazar guiones bajos por espacios y capitalizar
+            $nombrePagina = ucwords(str_replace("_", " ", $archivo));
+
+            echo $nombrePagina;
+            ?>
+        </span>
+            </div>
+
+            <!-- <div>
                 <h1>Tarea 1</h1>
                 <p>Este es un pequeño menu para la tarea 1 de la materia Programacion Web</p>
-            </div>
+            </div> -->
             <hr>
 
             <div id="divMenu">

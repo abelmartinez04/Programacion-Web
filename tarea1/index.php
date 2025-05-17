@@ -6,7 +6,7 @@
         A través del menú, podrás acceder a diferentes secciones que demuestran el uso de formularios, estructuras de control y manejo de variables.
     </p>
     <ul>
-        <li><strong>Tarjeta:</strong> Muestra tu tarjeta personal usando HTML y PHP.</li>
+        <li><strong>Tarjeta:</strong> Muestra mi tarjeta personal usando HTML y PHP.</li>
         <li><strong>Calculadora:</strong> Realiza operaciones matemáticas con un formulario.</li>
         <li><strong>Adivina:</strong> Juega a adivinar un número aleatorio.</li>
         <li><strong>Acerca de:</strong> Información sobre el autor del proyecto.</li>
