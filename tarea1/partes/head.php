@@ -98,6 +98,39 @@
             margin: 0 5px;
             color: #999;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            text-align: left;
+            padding: 10px;
+            color: #333;
+        }
+
+        td {
+            padding: 10px;
+            color: #555;
+        }
+
+        h3 {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #e7f4e4;
+            color: #2d7a2d;
+            border: 1px solid #b6dfb6;
+            text-align: center;
+        }
+
         </style>
     </head>
     <body>
