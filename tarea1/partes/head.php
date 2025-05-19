@@ -68,6 +68,7 @@
             margin-bottom: 10px;
         }
 
+        <div id="divContenido"></div>
 
         #divFooter {
             text-align: center;
@@ -134,7 +135,6 @@
         </style>
     </head>
     <body>
-            <i class="bi bi-house-door-fill"></i>
         </a>
         <div id="tarea1">
             <div class="breadcrumb">

@@ -32,6 +32,11 @@ switch ($operacion) {
         $resultado = "Operación no válida.";
         exit();
 }
+
+if (is_numeric($resultado)) {
+    $resultado = number_format($resultado, 2);
+}
+
 ?>
 
 <h3>Resultado: <?= $resultado ?></h3>
