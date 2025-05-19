@@ -13,124 +13,125 @@
             padding: 0;
         }
 
-        #tarea1 {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+            #tarea1 {
+                width: 90%;
+                max-width: 900px;
+                margin: 80px auto 40px auto; /* arriba | lados | abajo */
+                padding: 30px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
 
-        h1 {
-            text-align: center;
-            color: #333;
-        }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
 
-        p {
-            text-align: center;
-            color: #666;
-        }
+            p {
+                text-align: center;
+                color: #666;
+            }
 
-        #divMenu ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 30px 0;
-        }
+            #divMenu ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin: 30px 0;
+            }
 
-        #divMenu li {
-            display: inline;
-        }
+            #divMenu li {
+                display: inline;
+            }
 
-        #divMenu a {
-            text-decoration: none;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+            #divMenu a {
+                text-decoration: none;
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
 
-        #divMenu a:hover {
-            background-color: #45a049;
-            text-decoration: underline;
-        }
+            #divMenu a:hover {
+                background-color: #45a049;
+                text-decoration: underline;
+            }
 
-        #divContenido ul {
-            padding-left: 20px;
-            color: #333;
-        }
+            #divContenido ul {
+                padding-left: 20px;
+                color: #333;
+            }
 
-        #divContenido li {
-            margin-bottom: 10px;
-        }
+            #divContenido li {
+                margin-bottom: 10px;
+            }
 
-        <div id="divContenido"></div>
+            <div id="divContenido"></div>
 
-        #divFooter {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #999;
-        }
+            #divFooter {
+                text-align: center;
+                margin-top: 40px;
+                font-size: 0.9em;
+                color: #999;
+            }
 
-        hr {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+            hr {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
 
-        .breadcrumb {
-            margin: 15px 0;
-            font-size: 0.9em;
-        }
-        .breadcrumb a {
-            text-decoration: none;
-            color: #4CAF50;
-            display: inline-flex;
-            align-items: center;
-        }
-        .breadcrumb a i {
-            margin-right: 4px;
-        }
-        .breadcrumb span {
-            margin: 0 5px;
-            color: #999;
-        }
+            .breadcrumb {
+                margin: 15px 0;
+                font-size: 0.9em;
+            }
+            .breadcrumb a {
+                text-decoration: none;
+                color: #4CAF50;
+                display: inline-flex;
+                align-items: center;
+            }
+            .breadcrumb a i {
+                margin-right: 4px;
+            }
+            .breadcrumb span {
+                margin: 0 5px;
+                color: #999;
+            }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
 
-        table, th, td {
-            border: 1px solid #ccc;
-        }
+            table, th, td {
+                border: 1px solid #ccc;
+            }
 
-        th {
-            background-color: #f4f4f4;
-            text-align: left;
-            padding: 10px;
-            color: #333;
-        }
+            th {
+                background-color: #f4f4f4;
+                text-align: left;
+                padding: 10px;
+                color: #333;
+            }
 
-        td {
-            padding: 10px;
-            color: #555;
-        }
+            td {
+                padding: 10px;
+                color: #555;
+            }
 
-        h3 {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 5px;
-            background-color: #e7f4e4;
-            color: #2d7a2d;
-            border: 1px solid #b6dfb6;
-            text-align: center;
-        }
+            h3 {
+                margin-top: 20px;
+                padding: 15px;
+                border-radius: 5px;
+                background-color: #e7f4e4;
+                color: #2d7a2d;
+                border: 1px solid #b6dfb6;
+                text-align: center;
+            }
 
         </style>
     </head>
