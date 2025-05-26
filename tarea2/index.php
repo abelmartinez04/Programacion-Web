@@ -9,26 +9,48 @@ plantilla::aplicar()
                     <table class="table table-striped table-bordered table-hover">
                         <thead>
                             <tr>
+                                <th scope="col">Foto</th>
                                 <th scope="col">Tipo</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Año</th>
+                                <th scope="col">Autor</th>
                                 <th scope="col">País</th>
                                 <th scope="col">Acciones</th>
                             </tr>
                         </thead>
 
-                        <tbody>
-                            <tr>
-                                <td>Serie</td>
-                                <td>Breaking Bad</td>
-                                <td>2008</td>
-                                <td>USA</td>
-                                <td>
-                                    <a href="editar.php?id=1" class="btn btn-outline-dark">Editar</a>
-                                    <a href="detalle.php?id=1" class="btn btn-outline-info">Detalles</a>
-                                </td>
-                                
+                        <tbody>                            
                             </tr>
+                                <?php 
+
+                                    if(is_dir('datos')){
+                                        $archivos = scandir('datos');
+
+                                        foreach($archivos as $archivo){
+                                            $ruta = 'datos/'.$archivo;
+                                            if(is_file($ruta)){
+                                                $json = file_get_contents($ruta);
+                                                $obra = json_decode($json);
+                                                ?>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="<?=$obra->foto_url ?>" alt="<?=$obra->nombre ?>" height="100">
+                                                        </td>
+                                                        <td><?=Datos::Tipos_de_Obra()[$obra->tipo]?></td>
+                                                        <td><?= $obra->nombre ?></td>
+                                                        <td><?= $obra->autor ?></td>
+                                                        <td><?= $obra->pais ?></td>
+                                                        <td>
+                                                            <a href="editar.php?id=<?= $obra->codigo ?>" class="btn btn-outline-warning">Editar</a>
+                                                            <a href="personajes.php?id=<?= $obra->codigo ?>" class="btn btn-outline-info">Personajes</a>
+                                                            <a href="detalle.php?id=<?= $obra->codigo ?>" class="btn btn-outline-danger">Detalle</a>
+                                                        </td>
+                                                    </tr>
+                                                <?php
+                                            }
+
+                                        }
+                                    }
+                                ?>
                         </tbody>
                     </table>
 

@@ -25,4 +25,15 @@ class Personaje{
 
 }
 
+class Datos{
+    public static function Tipos_de_Obra(){
+        return array(
+            'pelicula' => 'Pelicula',
+            'serie' => 'Serie',
+            'libro' => 'Libro'
+        );
+    }
+}
 ?>
+
+<!-- 44:35 -->
