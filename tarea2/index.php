@@ -2,8 +2,8 @@
 include('libreria/main.php');
 plantilla::aplicar()
 ?>
-                    <div class="text-end mb-3">
-                        <a href="editar.php" class="btn btn-primary">Agregar</i></a>
+                    <div class="text-end mb-4">
+                        <a href="editar.php" class="btn btn-success"><i class="fas fa-plus-circle"></i>Agregar</i></a>
 
                     </div>
                     <table class="table table-striped table-bordered table-hover">

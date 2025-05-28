@@ -39,7 +39,7 @@ plantilla::aplicar();
     <div class="col-md-8">
         <h2>Personajes</h2>
         <div class="text-end md-3">
-            <a href="agregar_personaje.php?id=<?= $obra->codigo ?>" class="btn btn-primary">Agregar</a>
+            <a href="agregar_personaje.php?id=<?= $obra->codigo ?>" class="btn btn-success"><i class="fas fa-plus-circle"></i>Agregar</a>
         </div>
 
         <table class="table table-striped table-bordered table-hover">
