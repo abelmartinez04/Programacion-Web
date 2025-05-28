@@ -39,7 +39,7 @@ plantilla::aplicar();
     <div class="col-md-8">
         <h2>Personajes</h2>
         <div class="text-end md-3">
-            <a href="agregar_personaje.php>id=<?= $obra->codigo ?>" class="btn btn-primary">Agregar</i></a>
+            <a href="agregar_personaje.php?id=<?= $obra->codigo ?>" class="btn btn-primary">Agregar</a>
         </div>
 
         <table class="table table-striped table-bordered table-hover">
@@ -53,7 +53,24 @@ plantilla::aplicar();
             </thead>
 
             <tbody>
-                         
+                <?php 
+                    //cargar datos de los personajes
+                    foreach($obra->personajes as $personaje){
+                        echo "
+                            <tr>
+                                <td>
+                                    <img src='{$personaje->foto_url}' alt='{$personaje->nombre}' height='100'>
+                                </td>
+                                <td>{$personaje->nombre }</td>
+                                <td>{$personaje->apellido }</td>
+                                <td>{$personaje->fecha_nacimiento }</td>
+                                <td>
+                                    <a href='eliminar_personaje.php?id={$obra->codigo}' class='btn btn-outline-danger'>Eliminar</a>
+                                </td>
+                            </tr>
+                        ";
+                    }
+                ?>
             </tbody>
         </table>
     </div>

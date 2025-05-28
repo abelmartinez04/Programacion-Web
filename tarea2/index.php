@@ -12,6 +12,7 @@ plantilla::aplicar()
                                 <th scope="col">Foto</th>
                                 <th scope="col">Tipo</th>
                                 <th scope="col">Nombre</th>
+                                <th scope="col">Personajes</th>
                                 <th scope="col">Autor</th>
                                 <th scope="col">País</th>
                                 <th scope="col">Acciones</th>
@@ -37,6 +38,9 @@ plantilla::aplicar()
                                                         </td>
                                                         <td><?=Datos::Tipos_de_Obra()[$obra->tipo]?></td>
                                                         <td><?= $obra->nombre ?></td>
+                                                        <td>
+                                                            <?=count($obra->personajes)?>
+                                                        </td>
                                                         <td><?= $obra->autor ?></td>
                                                         <td><?= $obra->pais ?></td>
                                                         <td>

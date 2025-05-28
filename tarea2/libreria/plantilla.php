@@ -25,9 +25,11 @@ class plantilla{
 
     </head>
 
-    <body class="container">
-        <div>
+    <body>
+        <div class="container">
+            <a href="index.php">
             <h1 class="mt-3">Lo que he visto</h1>
+            </a>
             <p>Listado de peliculas y series en la que he invertido mi tiempo⌛</p>
 
 

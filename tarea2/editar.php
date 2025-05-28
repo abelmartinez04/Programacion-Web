@@ -45,7 +45,8 @@ if($_POST){
 
     plantilla::aplicar();
     echo "<div class='alert alert-success'>La obra ha sido guardada correctamente</div>";
-    echo "<a href='index.php' class btn btn-primary>Volver</a>";
+    echo "<a href='index.php' class='btn btn-primary'>Volver</a>";
+    exit();
 }
 
 
