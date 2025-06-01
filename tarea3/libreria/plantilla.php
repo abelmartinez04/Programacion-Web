@@ -29,13 +29,13 @@ class Plantilla{
                     <!-- Aqui va el menu -->
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link <?= $pagina_actual == 'inicio'?'active':''; ?>" aria-current="page" href="./">Inicio</a>
+                            <a class="nav-link <?= $pagina_actual == 'inicio'?'active':''; ?>" aria-current="page" href="<?=base_url(); ?>">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?= $pagina_actual == 'personajes'?'active':''; ?>" href="personajes.php">Personajes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= $pagina_actual == 'profesiones'?'active':''; ?>" href="profesiones.php">Profesiones</a>
+                            <a class="nav-link <?= $pagina_actual == 'profesiones'?'active':''; ?>" href="<?=base_url('modulos/profesiones/lista.php'); ?>">Profesiones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?= $pagina_actual == 'estadisticas'?'active':''; ?>" href="estadisticas.php">Estadísticas</a>
