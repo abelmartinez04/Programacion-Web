@@ -42,7 +42,7 @@ class Plantilla{
                         </li>
                     </ul>
                 </div>
-                <div class="contenido" style="min-height: 200px;">
+                <div class="contenido" style="min-height: 400px;">
                 
 
         <?php

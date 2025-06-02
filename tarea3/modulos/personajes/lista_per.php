@@ -1,7 +1,7 @@
 <?php 
 
 include('../../libreria/main.php');
-define("PAGINA_ACTUAL", "personajes.php");
+define("PAGINA_ACTUAL", "personajes");
 plantilla::aplicar();
 
 ?>

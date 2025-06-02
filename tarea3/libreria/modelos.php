@@ -37,10 +37,10 @@ Salario mensual estimado en dólares ($USD)
 */
 
 class profesion{
-    public $codigo;
-    public $nombre;
-    public $categoria;
-    public $salario_mensual;
+    public $codigo = '';
+    public $nombre = '';
+    public $categoria = '';
+    public $salario_mensual = 0;
 
     public function __construct($data = []){
         if(is_object($data)){
