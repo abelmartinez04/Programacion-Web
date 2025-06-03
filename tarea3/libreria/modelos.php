@@ -37,6 +37,7 @@ Salario mensual estimado en dólares ($USD)
 */
 
 class profesion{
+    public $idx = '';
     public $codigo = '';
     public $nombre = '';
     public $categoria = '';

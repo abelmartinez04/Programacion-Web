@@ -11,17 +11,20 @@ class Dbx{
     public static function list($collection){
         $datapath = DATA_DIR."/{$collection}";
         
-        if(!is_dir($datapath)){
+        if(!file_exists($datapath)){
             return [];
         }
 
-        $files = scandir($datapath);
+        // $files = scandir($datapath);
         $data = [];
         
-        foreach($files as $file){
-            $filepath = $datapath . '/' . $file;
+        foreach(scandir($datapath) as $file){
+            if ($file === "." || $file === "..") {
+                continue;
+            }
+            $filepath = $datapath . "/" . $file;
 
-            if(is_file($filepath)){
+            if(!is_file($filepath)){
                 continue;
             }
 
@@ -29,7 +32,7 @@ class Dbx{
             $itemData = unserialize($content);
 
             if($itemData){
-                $data[$file] = $itemData;
+                $data[] = $itemData;
             }
         }
         return $data;
@@ -53,7 +56,8 @@ class Dbx{
         }
 
         $fileName = uniqid();
-        $filepath = $datapath . '/' .$fileName.'dat';
+        $item->idx = $fileName;
+        $filepath = $datapath . '/' .$fileName.'.dat';
 
         file_put_contents($filepath, serialize($item));
     }

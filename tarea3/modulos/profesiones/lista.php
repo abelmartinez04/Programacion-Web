@@ -5,6 +5,7 @@ define("PAGINA_ACTUAL", "profesiones");
 plantilla::aplicar();
 
 $profesiones = Dbx::list("profesiones");
+// var_dump($profesiones);
 
 ?>
 <h1>Listado de profesiones</h1>
@@ -26,12 +27,15 @@ $profesiones = Dbx::list("profesiones");
             foreach($profesiones as $profesion): ?>
                 <tr>
                     <td><?php echo htmlspecialchars($profesion->nombre); ?></td>
-                    <td><?php echo htmlspecialchars($profesion->catergoria); ?></td>
+                    <td><?php echo htmlspecialchars($profesion->categoria); ?></td>
                     <td>
-                        <a href="<?= base_url("modulos/profesiones/editar_profesion.php?codigo={$profesion->codigo}");?>" class="btn btn-primary"></a><i class="bi bi-pencil-square"></i>Editar</a>
+                        <a href="<?= base_url("modulos/profesiones/editar_profesion.php?codigo={$profesion->idx}");?>" class="btn btn-primary"><i class="bi bi-pencil-square">
+
+                        </i>Editar</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
             
     </tbody>
 </table>
+
