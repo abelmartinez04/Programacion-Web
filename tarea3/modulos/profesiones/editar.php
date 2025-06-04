@@ -30,7 +30,7 @@ if(isset($_GET['codigo'])){
 <form method="POST" action="<?=$_SERVER['REQUEST_URI'] ?>">
     <div class="mb-3">
         <label for="codigo" class="form-label">Codigo</label>
-        <input type="text" class="form-control" id="codigo" name="codigo" value="<?= htmlspecialchars($profesion->codigo); ?>" >
+        <input type="text" class="form-control" id="idx" name="idx" value="<?= htmlspecialchars($profesion->idx); ?>" readonly>
     </div>
     
     <div class="mb-3">

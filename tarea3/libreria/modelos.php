@@ -10,13 +10,26 @@ Nivel de experiencia (Principiante, Intermedio, Avanzado)
 */
 
 class personaje{
-    public $identificacion;
-    public $nombre;
-    public $apellido;
-    public $fecha_nacimiento;
-    public $foto;
-    public $profesion;
-    public $nivel_experiencia;
+    public $idx = '';
+    public $identificacion = '';
+    public $nombre = '';
+    public $apellido = '';
+    public $fecha_nacimiento = '';
+    public $foto = '';
+    public $profesion = '';
+    public $nivel_experiencia  = 0;
+
+    public function edad(){
+        if(empty($this->fecha_nacimiento)){
+            return 0;
+        }
+        $fecha_nacimiento = strtotime($this->fecha_nacimiento);
+        $edad = date('Y') - date('Y', $fecha_nacimiento);
+        if(date('md') < date('md', $fecha_nacimiento)){
+            $edad--;
+        }
+        return $edad;
+    }
 
     public function __construct($data = []){
         if(is_object($data)){
