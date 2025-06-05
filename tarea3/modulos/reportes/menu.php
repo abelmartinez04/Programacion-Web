@@ -63,8 +63,62 @@ $data = [
 
 plantilla::aplicar();
 
+
+
 ?>
 
+<style>
+    body {
+        background-color: #fff0f6;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    h1 {
+        color: #d81b60;
+        text-shadow: 1px 1px 2px #f8bbd0;
+    }
+
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(248, 187, 208, 0.5);
+    }
+
+    .bg-primary {
+        background-color: #f06292 !important;
+    }
+
+    .bg-secondary {
+        background-color: #ce93d8 !important;
+    }
+
+    .bg-success {
+        background-color: #81d4fa !important;
+    }
+
+    .bg-warning {
+        background-color: #ffb74d !important;
+    }
+
+    .card-title {
+        font-weight: bold;
+        color: #ad1457;
+    }
+
+    .list-group-item {
+        background-color: #ffe4ec;
+        border: none;
+    }
+
+    .card-header {
+        background-color: #f8bbd0;
+    }
+
+    canvas {
+        background-color: #fff0f6;
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
     <!-- Font awesome para iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -133,8 +187,9 @@ plantilla::aplicar();
                 <div class="card">
                     <div class="card-header">
                         <h5 class="card-title">Salarios destacados</h5>
-                        <p><strong>Profesion con mayor salaro:</strong> <?= $mayor_salario; ?></p>
-                        <p><strong>Profesion con menor salaro:</strong> <?= $menor_salario; ?></p>
+                        <p><strong>Profesion con mayor salario:</strong> <?= htmlspecialchars($mayor_salario->nombre); ?> - $<?= number_format($mayor_salario->salario_mensual); ?></p>
+                        <p><strong>Profesion con menor salario:</strong> <?= htmlspecialchars($menor_salario->nombre); ?> - $<?= number_format($menor_salario->salario_mensual); ?></p>
+
                     </div>
                 </div>
             </div>

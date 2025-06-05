@@ -25,6 +25,61 @@ if(isset($_GET['codigo'])){
 
 ?>
 
+<style>
+    h3 {
+        color: #e91e63;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 3px #f8bbd0;
+    }
+
+    .form-label {
+        color: #880e4f;
+        font-weight: bold;
+    }
+
+    .form-control {
+        border-radius: 20px;
+        border: 2px solid #f8bbd0;
+        background-color: #fff0f6;
+    }
+
+    .form-control:focus {
+        border-color: #ec407a;
+        box-shadow: 0 0 5px #ec407a;
+    }
+
+    .btn-primary {
+        background-color: #ec407a;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #d81b60;
+    }
+
+    .btn-secondary {
+        background-color: #ba68c8;
+        border: none;
+    }
+
+    .btn-secondary:hover {
+        background-color: #ab47bc;
+    }
+
+    form {
+        background-color: #ffe4ec;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px #f8bbd0;
+        max-width: 600px;
+        margin: auto;
+    }
+</style>
+
+<h3>💼 Editar Profesión Barbie 💼</h3>
+
 <h3>Editar profesión</h3>
 
 <form method="POST" action="<?=$_SERVER['REQUEST_URI'] ?>">
