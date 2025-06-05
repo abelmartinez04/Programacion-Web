@@ -41,6 +41,7 @@ class personaje{
             }
         }
     }
+
 }
 
 /* profesiones
@@ -65,6 +66,10 @@ class profesion{
                 $this->$key = $value;
             }
         }
+    }
+
+    public function __toString(){
+        return "{$this->nombre} - Salario {$this->salario_mensual}";
     }
 }
 
