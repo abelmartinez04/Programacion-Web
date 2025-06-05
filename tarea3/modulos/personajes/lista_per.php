@@ -77,8 +77,8 @@ $personajes = Dbx::list("personajes");
         <tr>
             <th>Nombre</th>
             <th>Edad</th>
-            <th>Genero</th>
-            <th>Profesion</th>
+            <th>Experiencia</th>
+            <th>Codigo</th>
             <td></td>
         </tr>
     </thead>
@@ -90,8 +90,8 @@ $personajes = Dbx::list("personajes");
                 <td><?php echo htmlspecialchars($personaje->nivel_experiencia); ?></td>
                 <td><?php echo htmlspecialchars($personaje->profesion); ?></td>
                 <td>
-                    <a href="<?= base_url("modulos/personajes/editar.php?id=" . $personaje->id); ?>" class="btn btn-primary">Editar</a>
-                    <a href="<?= base_url("modulos/personajes/eliminar.php?id=" . $personaje->id); ?>" class="btn btn-danger">Eliminar</a>
+                    <a href="<?= base_url("modulos/personajes/editar.php?idx={$personaje->idx}"); ?>" class="btn btn-primary">Editar</a>
+                    <a href="<?= base_url("modulos/personajes/eliminar.php?idx={$personaje->idx}"); ?>" class="btn btn-danger">Eliminar</a>
                 </td>
             </tr>
     

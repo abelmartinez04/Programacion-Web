@@ -79,7 +79,7 @@ $profesiones = Dbx::list("profesiones");
                     <td><?php echo htmlspecialchars($profesion->nombre); ?></td>
                     <td><?php echo htmlspecialchars($profesion->categoria); ?></td>
                     <td>
-                        <a href="<?= base_url("modulos/profesiones/editar_profesion.php?codigo={$profesion->idx}");?>" class="btn btn-primary"><i class="bi bi-pencil-square">
+                        <a href="<?= base_url("modulos/profesiones/editar.php?codigo={$profesion->idx}");?>" class="btn btn-primary"><i class="bi bi-pencil-square">
 
                         </i>Editar</a>
                     </td>

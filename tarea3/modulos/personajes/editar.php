@@ -13,8 +13,8 @@ plantilla::aplicar();
 
 $personaje = new personaje();
 
-if(isset($_GET['id'])){
-    $tmp = Dbx::get("personajes", $_GET['id']);
+if(isset($_GET['idx'])){
+    $tmp = Dbx::get("personajes", $_GET['idx']);
     if($tmp){
         $personaje = $tmp;
     }
@@ -111,7 +111,7 @@ if(isset($_GET['id'])){
 
     <div class="mb-3">
         <label for="profesion" class="form-label">profesion</label>
-        <select class="form-select" id="profesion" name="profesion">
+        <select class="form-select" id="profesion" name="profesion" required>
             <option value="">Seleccione una profesion</option>    
             <?php
                 $profesiones = Dbx::list("profesiones");
@@ -129,5 +129,5 @@ if(isset($_GET['id'])){
     </div>
 
     <button type="submit" class="btn btn-primary">Guardar</button>
-    <a href="<?php base_url('modulos/personajes/lista_per.php'); ?>" class="btn btn-secondary">Cancelar</a>
+    <a href="<?=base_url('modulos/personajes/lista_per.php'); ?>" class="btn btn-secondary">Cancelar</a>
 </form>

@@ -80,7 +80,6 @@ if(isset($_GET['codigo'])){
 
 <h3>💼 Editar Profesión Barbie 💼</h3>
 
-<h3>Editar profesión</h3>
 
 <form method="POST" action="<?=$_SERVER['REQUEST_URI'] ?>">
     <div class="mb-3">
@@ -89,7 +88,7 @@ if(isset($_GET['codigo'])){
     </div>
     
     <div class="mb-3">
-        <label for="descripcion" class="form-label">Nombre</label>
+        <label for="nombre" class="form-label">Nombre</label>
         <input type="text" class="form-control" id="nombre" name="nombre" value="<?= htmlspecialchars($profesion->nombre); ?>" required>
     </div>
 
@@ -103,5 +102,5 @@ if(isset($_GET['codigo'])){
         <input type="number" class="form-control" id="salario_mensual" name="salario_mensual" value="<?= htmlspecialchars($profesion->salario_mensual); ?>" required>
 
     <button type="submit" class="btn btn-primary">Guardar</button>
-    <a href="<?php base_url('modulos/profesiones/lista.php'); ?>" class="btn btn-secondary">Cancelar</a>
+    <a href="<?=base_url('modulos/profesiones/lista.php'); ?>" class="btn btn-secondary">Cancelar</a>
 </form>
