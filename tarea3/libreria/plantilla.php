@@ -18,7 +18,7 @@ class Plantilla{
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>🌸 Mundo Barbie 🌸</title>
             <!-- Favicon estilo Barbie -->
-            <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3468/3468360.png">
+            <!-- <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3468/3468360.png"> -->
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
