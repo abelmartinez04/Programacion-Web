@@ -1,3 +1,5 @@
+<!-- Abel Martinez - 2024-0227 -->
+
 <?php
 // plantilla.php
 function mostrarPagina($titulo, $contenido) {

@@ -37,7 +37,7 @@ ob_start();
             <div class="card-body">
                 <h5 class="card-title">GitHub del Proyecto</h5>
                 <p class="card-text">Revisa el código fuente, historial de cambios y despliegue del portal.</p>
-                <a href="https://github.com/tu-usuario/tu-repo" class="btn btn-dark" target="_blank">Ir al repositorio</a>
+                <a href="https://github.com/abelmartinez04/Programacion-Web/tree/main/Tarea%205" class="btn btn-dark" target="_blank">Ir al repositorio</a>
             </div>
         </div>
     </div>
