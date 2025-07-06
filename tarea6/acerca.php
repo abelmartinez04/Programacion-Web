@@ -49,6 +49,7 @@
     <img src="uploads/mi_foto.png" alt="Foto de Abel Martinez" />
     <h1>Abel Martínez</h1>
     <h2>Matrícula: 2024-0227</h2>
+    <a href="https://github.com/abelmartinez04/Programacion-Web/tree/main/tarea6" target="_blank">Repo de GitHub</a>
     <p>Video explicativo de la tarea 2:</p>
     <iframe src="https://www.youtube.com/embed/42W_V_FLYrI" allowfullscreen></iframe>
 
