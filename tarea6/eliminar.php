@@ -1,5 +1,5 @@
 <?php
-require 'conexion.php';
+require 'models/conexion.php';
 
 $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 

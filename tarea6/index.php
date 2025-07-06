@@ -1,5 +1,15 @@
 <?php
-require 'conexion.php';
+if (!file_exists('models/conexion.php')) {
+    header('Location: configurar_db.php');
+    exit;
+}
+
+include 'models/conexion.php';
+
+if ($conexion->connect_error) {
+    header('Location: models/configurar_db.php');
+    exit;
+}
 require 'libreria/plantilla.php';
 
 $titulo = "Listado de Personajes";

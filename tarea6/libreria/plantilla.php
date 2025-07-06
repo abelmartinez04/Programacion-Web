@@ -39,7 +39,7 @@
         </a>
         <div>
             <a href="agregar.php" class="btn btn-naruto me-2">+ Agregar Ninja</a>
-            <a href="acerca_de.php" class="btn btn-outline-light">Acerca de</a>
+            <a href="acerca.php" class="btn btn-outline-light">Acerca de</a>
         </div>
     </div>
 </nav>

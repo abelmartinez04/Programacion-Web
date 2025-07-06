@@ -1,5 +1,5 @@
 <?php
-require 'conexion.php';
+require 'models/conexion.php';
 require 'libreria/plantilla.php';
 
 $titulo = "Agregar Nuevo Personaje";
