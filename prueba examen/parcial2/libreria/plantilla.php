@@ -37,7 +37,7 @@ class Plantilla{
         </div>
         <div class="text-center">
             <hr>
-            Derechos reservados &copy; 2025 - Consultorio Dental
+            Derechos reservados &copy; 2025 - Mi empresa
         </div>
     </div>
 </body>
