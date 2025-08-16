@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Abel Martinez",
+        "email": "abelrobles0409@gmail.com",
+        "telefono": "0000000000",
+        "password": "123456"
+    },
+    {
+        "nombre": "Pedro",
+        "email": "natsumdrag02@gmail.com",
+        "telefono": "999999999",
+        "password": "123456"
+    },
+    {
+        "nombre": "Abel Eduardo Martinez",
+        "email": "abelmartinez04086@gmail.com",
+        "telefono": "0000000000",
+        "password": "12345678"
+    }
+]

@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-card {
+    border-radius: 15px;
+    padding: 20px;
+    background: #fff;
+}
+
+.password-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+.password-icon:hover {
+    color: #495057;
+}
+
+
+.btn-show-password {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6c757d; 
+    font-size: 1.2rem;
+}
+
+.btn-show-password:hover {
+    color: #0d6efd; 
+}
+
